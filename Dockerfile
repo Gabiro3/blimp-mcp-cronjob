@@ -8,7 +8,6 @@ RUN pip install --no-cache-dir -r requirements_cronjob.txt
 
 # Copy cronjob server code
 COPY cronjob_server.py .
-COPY .env .
 
 # Run the cronjob server
 CMD ["python", "cronjob_server.py"]
